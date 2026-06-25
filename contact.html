@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | GadgetHub</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- ============================================= -->
+<!-- 🔽 YAHAN APNA META PIXEL CODE PASTE KARO 🔽 -->
+<!-- PIXEL CODE START -->
+
+<!-- PIXEL CODE END -->
+<!-- ============================================= -->
+
+</head>
+<body>
+
+<header>
+  <h1><a href="index.html">GADGETHUB</a></h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="cart.html" class="cart-icon">Cart (<span id="cartCount">0</span>)</a>
+  </nav>
+</header>
+
+<section class="page-header">
+  <h2>Get in Touch</h2>
+</section>
+
+<form onsubmit="submitForm(event)">
+  <input type="text" placeholder="Your Name" required>
+  <input type="email" placeholder="Your Email" required>
+  <textarea placeholder="Your Message" rows="5" required></textarea>
+  <!-- 🔽 Lead event yahan -->
+  <button type="submit">Send Message</button>
+</form>
+
+<footer>
+  &copy; 2026 GadgetHub — Demo store for Facebook Pixel practice
+</footer>
+
+<script src="cart.js"></script>
+<script>
+  function submitForm(e) {
+    e.preventDefault();
+
+    // ============================================
+    // 🔽 YAHAN Lead EVENT CODE AANI CHAHIYE 🔽
+    // fbq('track', 'Lead');
+    // ============================================
+
+    alert("Message sent! We'll get back to you soon.");
+    e.target.reset();
+  }
+</script>
+</body>
+</html>

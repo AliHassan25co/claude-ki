@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop | GadgetHub</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- ============================================= -->
+<!-- 🔽 YAHAN APNA META PIXEL CODE PASTE KARO 🔽 -->
+<!-- PIXEL CODE START -->
+
+<!-- PIXEL CODE END -->
+<!-- ============================================= -->
+
+</head>
+<body>
+
+<header>
+  <h1><a href="index.html">GADGETHUB</a></h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html" class="active">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html" class="cart-icon">Cart (<span id="cartCount">0</span>)</a>
+  </nav>
+</header>
+
+<section class="page-header">
+  <h2>Shop All Gadgets</h2>
+</section>
+
+<section class="products">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbd?w=400" alt="Earbuds">
+    <div class="card-body">
+      <h3>Wireless Earbuds Pro</h3>
+      <p class="price">Rs. 4,999</p>
+      <button class="btn" onclick="addToCart('Wireless Earbuds Pro', 4999, 'https://images.unsplash.com/photo-1572569511254-d8f925fe2cbd?w=200')">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Smart Watch">
+    <div class="card-body">
+      <h3>Smart Watch Series 5</h3>
+      <p class="price">Rs. 8,499</p>
+      <button class="btn" onclick="addToCart('Smart Watch Series 5', 8499, 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=200')">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400" alt="Speaker">
+    <div class="card-body">
+      <h3>Bluetooth Speaker</h3>
+      <p class="price">Rs. 3,250</p>
+      <button class="btn" onclick="addToCart('Bluetooth Speaker', 3250, 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=200')">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400" alt="Power Bank">
+    <div class="card-body">
+      <h3>20000mAh Power Bank</h3>
+      <p class="price">Rs. 2,799</p>
+      <button class="btn" onclick="addToCart('20000mAh Power Bank', 2799, 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=200')">Add to Cart</button>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  &copy; 2026 GadgetHub — Demo store for Facebook Pixel practice
+</footer>
+
+<script src="cart.js"></script>
+</body>
+</html>

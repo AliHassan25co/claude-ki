@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart | GadgetHub</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- ============================================= -->
+<!-- 🔽 YAHAN APNA META PIXEL CODE PASTE KARO 🔽 -->
+<!-- PIXEL CODE START -->
+
+<!-- PIXEL CODE END -->
+<!-- ============================================= -->
+
+</head>
+<body>
+
+<header>
+  <h1><a href="index.html">GADGETHUB</a></h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html" class="active cart-icon">Cart (<span id="cartCount">0</span>)</a>
+  </nav>
+</header>
+
+<section class="page-header">
+  <h2>Your Cart</h2>
+</section>
+
+<div class="cart-page">
+  <div id="cartItems"></div>
+
+  <div id="cartSummary" class="cart-summary" style="display:none;">
+    <p>Total: Rs. <span id="cartTotal">0</span></p>
+    <!-- 🔽 Purchase event yahan fire hota hai (cart.js mein) -->
+    <button onclick="completePurchase()">Complete Purchase</button>
+  </div>
+</div>
+
+<footer>
+  &copy; 2026 GadgetHub — Demo store for Facebook Pixel practice
+</footer>
+
+<script src="cart.js"></script>
+</body>
+</html>
